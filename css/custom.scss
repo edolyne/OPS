@@ -1,0 +1,145 @@
+/* PARTIAL IMPORTS */
+
+@import "colors";
+@import "fonts";
+@import "buttons";
+
+body {
+	font-size: 100%; /* Base font-size of 16px */
+}
+h1 {
+	font-size: 3.75em; /* 60 / 16 */
+	line-height: 1em; /* 60 / 60 */
+	margin-bottom: .5em; /* 30 / 60 */
+	color: $orange;
+	font-family: Oswald, sans-serif;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+h2 {
+	font-size: 2.25em; /* 50 / 16 */
+	line-height: 1.333333333333333em; /* 67 / 36 */
+	margin-bottom: .6666666666666667em; /* 34 / 36 */
+	color: $orange;
+	font-family: Oswald, sans-serif;
+	font-weight: normal;
+}
+h3 {
+	font-size: 1.875em; /* 30 / 16 */
+	line-height: 1em; /* 30 / 24 */
+	margin-bottom: 1em; /* 30 / 24 */
+	color: $orange;
+	font-family: Oswald, sans-serif;
+	font-weight: normal;
+}
+h4 {
+	font-size: 1.25em; /* 20 / 16 */
+	line-height: 1.142857142857143em; /* 24 / 21 */
+	margin-bottom: 1.142857142857143em; /* 24 / 21 */
+	color: $black;
+	font-family: Oswald, sans-serif;
+	font-weight: normal;
+}
+h5 {
+	font-size: 1.125em; /* 18 / 16 */
+	line-height: 1.333333333333333em; /* 24 / 18 */
+	margin-bottom: 1.333333333333333em; /* 24 / 18 */
+	font-family: OpenSans, sans-serif;
+	font-weight: normal;
+}
+h6 {
+	font-size: 1em; /* 16 / 16 */
+	line-height: 1.5em; /* 24 / 16 */
+	margin-bottom: 1.5em; /* 24 / 16 */
+	font-family: OpenSans, sans-serif;
+	font-weight: light;
+}
+p {
+	font-size: 1em; /* 16 / 16 */
+	line-height: 1.5em; /* 24 / 16 */
+	margin-bottom: 1.5em; /* 24 / 16 */
+	color: $black;
+	font-family: OpenSans, sans-serif;
+	font-weight: light;
+}
+
+.center {
+	text-align: center;
+}
+
+/* BLOCK ELEMENT OVERIDE */
+
+body {
+	margin: 0 auto;
+}
+
+.row-fluid-wrapper {
+	margin: 1em;
+}
+
+.fullWidth {
+	margin: 0 -1em;
+	display: block;
+	width: 103%;
+}
+
+/* TOP SEARCH NAV */
+
+.topNav {
+	width: 100%;
+	background: $mdGrey;
+	color: $white;
+	padding: 1em 2em;
+}
+
+/* MENU STYLE DECLARATIONS */
+
+#hs_cos_wrapper_top_menu {
+	
+	text-align: right;
+
+	ul {
+	
+		background: $white;
+	
+		li  {
+			font-family: Oswald, sans-serif;
+			font-weight: light;
+			
+			a {
+				color: $black;
+				}
+			a:hover {
+				color: $orange;
+				border-bottom: $orange 1px solid;
+				}
+			}
+		}
+}
+
+/* HOME PAGE */
+
+.hero {
+
+
+	
+	.heroImage {
+		background: url(http://cdn2.hubspot.net/hub/309733/file-299834622-png/hero/OPS-Home-Hero.png);
+		background-size: cover;
+		height: 25em;
+	}
+}
+
+.testimonialSlider {
+	background: $mdGrey;
+	padding: 2em 1em;
+	
+	h2 {
+		text-align: center;
+		margin-top: 0em;
+	}
+	
+	p {
+		color: $white;
+	}
+}

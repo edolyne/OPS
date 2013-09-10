@@ -1,0 +1,28 @@
+/* BUTTONS */
+
+.btn-orange {
+	padding: 1em 2em;
+	display: block;
+	font-family: Oswald;
+	font-weight: light;
+	text-transform: uppercase;
+	color: $white;
+	background: $orange;
+	font-size: 1em;
+	text-align: center;
+	text-decoration: none;
+}
+
+.btn-outline {
+	padding: 1em 2em;
+	display: block;
+	font-family: Oswald;
+	font-weight: light;
+	text-transform: uppercase;
+	color: $white;
+	background: transparent;
+	border: $white 2px solid;
+	font-size: 1em;
+	text-align: center;
+	text-decoration: none;
+}

@@ -1,0 +1,9 @@
+/* CUSTOM FONT INTEGRATION */
+
+@include font-face(Oswald, 'http://cdn2.hubspot.net/hub/309733/file-299535702-svg/fonts/oswald/oswald-regular-webfont.svg');
+@include font-face(Oswald, 'http://cdn2.hubspot.net/hub/309733/file-299511682-svg/fonts/oswald/oswald-bold-webfont.svg', bold);
+@include font-face(Oswald, 'http://cdn2.hubspot.net/hub/309733/file-298054218-svg/fonts/oswald/oswald-light-webfont.svg', light);
+
+@include font-face(OpenSans, 'http://cdn2.hubspot.net/hub/309733/file-299540817-svg/fonts/opensans/opensans-regular-webfont.svg');
+@include font-face(OpenSans, 'http://cdn2.hubspot.net/hub/309733/file-298066898-svg/fonts/opensans/opensans-bold-webfont.svg', bold);
+@include font-face(OpenSans, 'http://cdn2.hubspot.net/hub/309733/file-300510230-svg/fonts/opensans/opensans-light-webfont.svg', light);
