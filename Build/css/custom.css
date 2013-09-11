@@ -71,7 +71,8 @@
 
 body {
   font-size: 100%;
-  /* Base font-size of 16px */ }
+  /* Base font-size of 16px */
+  max-width: 100%; }
 
 h1 {
   font-size: 3.75em;
@@ -156,13 +157,12 @@ p {
 body {
   margin: 0 auto; }
 
-.row-fluid-wrapper {
-  margin: 1em; }
+.body-container-wrapper {
+  margin: 0 2em; }
 
 .fullWidth {
-  margin: 0 -1em;
-  display: block;
-  width: 103%; }
+  margin-left: -2em;
+  margin-right: -2em; }
 
 /* TOP SEARCH NAV */
 .topNav {
@@ -171,25 +171,72 @@ body {
   color: white;
   padding: 1em 2em; }
 
+.search-icon {
+  background: url(http://cdn2.hubspot.net/hub/309733/file-299892489-png/assets/search-icon.png) no-repeat center #969696; }
+
+#hs-search-module {
+  text-align: left;
+  height: 1.8em; }
+  #hs-search-module label {
+    display: inline-block;
+    font-family: Oswald, sans-serif;
+    font-weight: light;
+    vertical-align: top;
+    top: 0.25em;
+    position: relative;
+    margin-right: 1em; }
+  #hs-search-module .input {
+    display: inline-block;
+    vertical-align: middle; }
+    #hs-search-module .input .hs-input {
+      border: transparent 1px solid;
+      border-radius: 4px; }
+    #hs-search-module .input :focus {
+      border: #f99a20 1px solid;
+      box-shadow: none;
+      outline: none; }
+  #hs-search-module a.hs-button.primary {
+    text-indent: -9999px;
+    display: inline-block;
+    background: url(http://cdn2.hubspot.net/hub/309733/file-299892489-png/assets/search-icon.png) no-repeat center #969696;
+    top: -1.75em;
+    position: relative;
+    height: 1.52em;
+    right: -8.35em;
+    cursor: pointer;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px; }
+
 /* MENU STYLE DECLARATIONS */
-#hs_cos_wrapper_top_menu {
-  text-align: right; }
-  #hs_cos_wrapper_top_menu ul {
-    background: white; }
-    #hs_cos_wrapper_top_menu ul li {
-      font-family: Oswald, sans-serif;
-      font-weight: light; }
-      #hs_cos_wrapper_top_menu ul li a {
-        color: black; }
-      #hs_cos_wrapper_top_menu ul li a:hover {
-        color: #f99a20;
-        border-bottom: #f99a20 1px solid; }
+#hs_cos_wrapper_top_menu ul {
+  background: white; }
+  #hs_cos_wrapper_top_menu ul li {
+    font-family: Oswald, sans-serif;
+    font-weight: light; }
+    #hs_cos_wrapper_top_menu ul li a {
+      color: black; }
+    #hs_cos_wrapper_top_menu ul li a:hover {
+      color: #f99a20;
+      border-bottom: #f99a20 1px solid; }
+
+.header .menu {
+  margin: 2em; }
 
 /* HOME PAGE */
-.hero .heroImage {
-  background: url(http://cdn2.hubspot.net/hub/309733/file-299834622-png/hero/OPS-Home-Hero.png);
-  background-size: cover;
-  height: 25em; }
+.hero {
+  margin-right: -2em;
+  margin-left: -2em; }
+  .hero .heroImage {
+    background: url(http://cdn2.hubspot.net/hub/309733/file-299834622-png/hero/OPS-Home-Hero.png);
+    background-size: cover;
+    height: 25em; }
+  .hero .heroText {
+    padding-left: 2em;
+    padding-right: 2em; }
+    .hero .heroText h1 {
+      letter-spacing: 0.02em; }
+    .hero .heroText p {
+      color: white; }
 
 .testimonialSlider {
   background: #3e3e3e;

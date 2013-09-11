@@ -6,7 +6,9 @@
 
 body {
 	font-size: 100%; /* Base font-size of 16px */
+    max-width: 100%;
 }
+
 h1 {
 	font-size: 3.75em; /* 60 / 16 */
 	line-height: 1em; /* 60 / 60 */
@@ -16,6 +18,7 @@ h1 {
 	font-weight: bold;
 	text-transform: uppercase;
 }
+
 h2 {
 	font-size: 2.25em; /* 50 / 16 */
 	line-height: 1.333333333333333em; /* 67 / 36 */
@@ -24,6 +27,7 @@ h2 {
 	font-family: Oswald, sans-serif;
 	font-weight: normal;
 }
+
 h3 {
 	font-size: 1.875em; /* 30 / 16 */
 	line-height: 1em; /* 30 / 24 */
@@ -32,6 +36,7 @@ h3 {
 	font-family: Oswald, sans-serif;
 	font-weight: normal;
 }
+
 h4 {
 	font-size: 1.25em; /* 20 / 16 */
 	line-height: 1.142857142857143em; /* 24 / 21 */
@@ -40,6 +45,7 @@ h4 {
 	font-family: Oswald, sans-serif;
 	font-weight: normal;
 }
+
 h5 {
 	font-size: 1.125em; /* 18 / 16 */
 	line-height: 1.333333333333333em; /* 24 / 18 */
@@ -47,6 +53,7 @@ h5 {
 	font-family: OpenSans, sans-serif;
 	font-weight: normal;
 }
+
 h6 {
 	font-size: 1em; /* 16 / 16 */
 	line-height: 1.5em; /* 24 / 16 */
@@ -54,6 +61,7 @@ h6 {
 	font-family: OpenSans, sans-serif;
 	font-weight: light;
 }
+
 p {
 	font-size: 1em; /* 16 / 16 */
 	line-height: 1.5em; /* 24 / 16 */
@@ -73,14 +81,13 @@ body {
 	margin: 0 auto;
 }
 
-.row-fluid-wrapper {
-	margin: 1em;
+.body-container-wrapper {
+    margin: 0 2em;
 }
 
 .fullWidth {
-	margin: 0 -1em;
-	display: block;
-	width: 103%;
+	margin-left: -2em;
+    margin-right: -2em;
 }
 
 /* TOP SEARCH NAV */
@@ -92,11 +99,54 @@ body {
 	padding: 1em 2em;
 }
 
+.search-icon {
+    background: url(http://cdn2.hubspot.net/hub/309733/file-299892489-png/assets/search-icon.png) no-repeat center $ltGrey;
+}
+
+#hs-search-module {
+    
+    text-align: left;
+    height: 1.8em;
+    
+    label {
+        display: inline-block;
+        font-family: Oswald, sans-serif;
+        font-weight: light;
+        vertical-align: top;
+        top: 0.25em;
+        position: relative;
+        margin-right: 1em;
+    }
+    .input {
+        display: inline-block;
+        vertical-align: middle;
+        
+        .hs-input {
+            border: transparent 1px solid;
+            border-radius: 4px;
+        }
+        :focus {
+            border: $orange 1px solid;
+            box-shadow: none;
+            outline: none;
+        }
+    }
+    a.hs-button.primary {
+        text-indent: -9999px;
+        display: inline-block;
+        background: url(http://cdn2.hubspot.net/hub/309733/file-299892489-png/assets/search-icon.png) no-repeat center $ltGrey;
+        top: -1.75em;
+        position: relative;
+        height: 1.52em;
+        right: -8.35em;
+        cursor: pointer;
+        @include border-right-radius(4px);
+    }
+}
+
 /* MENU STYLE DECLARATIONS */
 
 #hs_cos_wrapper_top_menu {
-	
-	text-align: right;
 
 	ul {
 	
@@ -117,17 +167,35 @@ body {
 		}
 }
 
+.header .menu {
+    margin: 2em;
+}
+
 /* HOME PAGE */
 
 .hero {
 
-
+    margin-right: -2em;
+    margin-left: -2em;
 	
 	.heroImage {
 		background: url(http://cdn2.hubspot.net/hub/309733/file-299834622-png/hero/OPS-Home-Hero.png);
 		background-size: cover;
 		height: 25em;
 	}
+    
+    .heroText {
+        padding-left: 2em;
+        padding-right: 2em;
+        
+        h1 {
+            letter-spacing: 0.02em;
+        }
+        
+        p {
+            color: $white;
+        }
+    }
 }
 
 .testimonialSlider {
