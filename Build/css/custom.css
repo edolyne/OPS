@@ -54,7 +54,18 @@
   background: #f99a20;
   font-size: 1em;
   text-align: center;
-  text-decoration: none; }
+  text-decoration: none;
+  box-shadow: 0 3px 0 0 #d78116;
+  border-radius: 4px; }
+  .btn-orange a {
+    text-decoration: none;
+    display: block; }
+
+.btn-orange:hover {
+  opacity: 1;
+  transform: scale(0.97);
+  -ms-transform: scale(0.97);
+  -webkit-transform: scale(0.97); }
 
 .btn-outline {
   padding: 1em 2em;
@@ -67,13 +78,34 @@
   border: white 2px solid;
   font-size: 1em;
   text-align: center;
-  text-decoration: none; }
+  text-decoration: none;
+  border-radius: 4px; }
+  .btn-outline a {
+    text-decoration: none;
+    display: block; }
+
+.btn-outline:hover {
+  background: white;
+  border: white 2px solid;
+  transform: scale(0.97);
+  -ms-transform: scale(0.97);
+  -webkit-transform: scale(0.97);
+  color: #3e3e3e; }
+
+.btn-outline:hover a {
+  color: #3e3e3e; }
+
+/* BUTTON POSITIONING */
+.verticalBtn {
+  margin-top: 1.65em; }
 
 body {
   font-size: 100%;
   /* Base font-size of 16px */
   max-width: 100%;
-  background: white; }
+  background: white;
+  overflow-x: hidden;
+  position: relative; }
 
 h1 {
   font-size: 3.75em;
@@ -101,7 +133,7 @@ h2 {
 h3 {
   font-size: 1.875em;
   /* 30 / 16 */
-  line-height: 1em;
+  line-height: 1.25em;
   /* 30 / 24 */
   margin-bottom: 1em;
   /* 30 / 24 */
@@ -160,7 +192,6 @@ body {
   overflow-x: hidden; }
 
 .body-container-wrapper {
-  max-width: 71.25em;
   margin: 0 auto; }
 
 .fullWidth {
@@ -170,6 +201,9 @@ body {
 .row-fluid .row-fluid-wrapper .row-fluid .row-fluid-wrapper {
   max-width: 71.25em;
   margin: 0 auto; }
+
+.bodyWrapper {
+  margin: 3em auto; }
 
 .bodyWrapper .row-fluid-wrapper .row-fluid {
   max-width: 71.25em;
@@ -212,11 +246,15 @@ body {
     background: url(http://cdn2.hubspot.net/hub/309733/file-299892489-png/assets/search-icon.png) no-repeat center #969696;
     top: -1.75em;
     position: relative;
-    height: 1.52em;
+    height: 1.54em;
     right: -8.35em;
     cursor: pointer;
     border-top-right-radius: 4px;
     border-bottom-right-radius: 4px; }
+
+.locateDropdown h5 {
+  margin: 0;
+  text-align: right; }
 
 /* STICKY HEADER */
 /*.header-container-wrapper {
@@ -228,22 +266,24 @@ body {
     opacity: 1;
     }
 */
+.menu {
+  background: white; }
+
 .menu.stuck {
   position: fixed;
-  top: -0.85em;
+  top: 0;
+  height: 4em;
   background: white;
-  opacity: 0.8;
-  border-bottom: #969696 1px solid;
-  transform: scaleY(0.75);
-  -ms-transform: scaleY(0.75);
-  -webkit-transform: scaleY(0.75);
-  -webkit-transition-duration: 0.65s; }
-  .menu.stuck #hs_cos_wrapper_logo img {
-    -webkit-transform: scaleX(0.75);
-    -webkit-transition-duration: 0.5s; }
-  .menu.stuck ul li {
-    -webkit-transform: scaleY(1.4);
-    -webkit-transition-duration: 0.5s; }
+  opacity: 0.9;
+  border-bottom: #969696 1px solid; }
+  .menu.stuck .headerMenu .cell-wrapper ul {
+    margin-top: 0; }
+  .menu.stuck #hs_cos_wrapper_logo {
+    top: -1.25em;
+    position: relative; }
+    .menu.stuck #hs_cos_wrapper_logo img {
+      -webkit-transform: scale(0.65);
+      -webkit-transition-duration: 0.5s; }
 
 /* MENU STYLE DECLARATIONS */
 #hs_cos_wrapper_top_menu ul {
@@ -268,20 +308,24 @@ body {
       margin-top: 1em; }
 
 /* HOME PAGE */
-.hero {
-  margin-right: -2em;
-  margin-left: -2em; }
-  .hero .heroImage {
-    background: url(http://cdn2.hubspot.net/hub/309733/file-299834622-png/hero/OPS-Home-Hero.png);
-    background-size: cover;
-    height: 25em; }
-  .hero .heroText {
-    padding-left: 2em;
-    padding-right: 2em; }
-    .hero .heroText h1 {
-      letter-spacing: 0.02em; }
-    .hero .heroText p {
-      color: white; }
+.hero #heroImage {
+  background: url(http://cdn2.hubspot.net/hub/309733/file-299834622-png/hero/OPS-Home-Hero.png) 50% 0 no-repeat fixed;
+  background-size: cover;
+  height: 30em; }
+.hero .heroText h1 {
+  letter-spacing: 0.02em; }
+.hero .heroText p {
+  color: white; }
+
+.heroCTA {
+  background: #3e3e3e;
+  width: 100%;
+  padding: 0.5em 0; }
+  .heroCTA p, .heroCTA h1, .heroCTA h2, .heroCTA h3, .heroCTA h4, .heroCTA a {
+    color: white; }
+  .heroCTA .ctaDescription {
+    display: inline-block;
+    vertical-align: middle; }
 
 .testimonialSlider {
   background: #3e3e3e;

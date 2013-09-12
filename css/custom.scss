@@ -8,6 +8,8 @@ body {
 	font-size: 100%; /* Base font-size of 16px */
     max-width: 100%;
     background: $white;
+    overflow-x: hidden;
+    position: relative;
 }
 
 h1 {
@@ -31,7 +33,7 @@ h2 {
 
 h3 {
 	font-size: 1.875em; /* 30 / 16 */
-	line-height: 1em; /* 30 / 24 */
+	line-height: 1.25em; /* 30 / 24 */
 	margin-bottom: 1em; /* 30 / 24 */
 	color: $orange;
 	font-family: Oswald, sans-serif;
@@ -84,7 +86,6 @@ body {
 }
 
 .body-container-wrapper {
-    max-width: 71.25em;
     margin: 0 auto;
 }
 
@@ -98,6 +99,9 @@ body {
     margin: 0 auto;
 }
 
+.bodyWrapper {
+    margin: 3em auto;   
+}
 .bodyWrapper .row-fluid-wrapper .row-fluid {
     max-width: 71.25em;
     margin: 0 auto;
@@ -150,10 +154,18 @@ body {
         background: url(http://cdn2.hubspot.net/hub/309733/file-299892489-png/assets/search-icon.png) no-repeat center $ltGrey;
         top: -1.75em;
         position: relative;
-        height: 1.52em;
+        height: 1.54em;
         right: -8.35em;
         cursor: pointer;
         @include border-right-radius(4px);
+    }
+}
+
+.locateDropdown {
+    
+    h5 {
+        margin: 0;
+        text-align: right;
     }
 }
 
@@ -169,25 +181,35 @@ body {
     }
 */
 
+.menu {
+    background: $white;
+}
+
 .menu.stuck {
     position:fixed;
-    top: -0.85em;
+    top: 0;
+    height: 4em;
     background: $white;
-    opacity: 0.8;
+    opacity: 0.9;
     border-bottom: $ltGrey 1px solid;
-    transform: scaleY(0.75);
-    -ms-transform: scaleY(0.75);
-    -webkit-transform: scaleY(0.75);
-    -webkit-transition-duration: 0.65s;
     
-    #hs_cos_wrapper_logo img {
-        -webkit-transform: scaleX(0.75);
-        -webkit-transition-duration: 0.5s;
+    .headerMenu .cell-wrapper ul {
+        margin-top: 0;
+    }
+    
+    #hs_cos_wrapper_logo {
+        
+        top: -1.25em;
+        position: relative;
+        
+        img {
+            -webkit-transform: scale(0.65);
+            -webkit-transition-duration: 0.5s;
+        }
     }
     
     ul li {
-        -webkit-transform: scaleY(1.4);
-        -webkit-transition-duration: 0.5s;
+
     }
 }
 
@@ -234,19 +256,14 @@ body {
 /* HOME PAGE */
 
 .hero {
-
-    margin-right: -2em;
-    margin-left: -2em;
 	
-	.heroImage {
-		background: url(http://cdn2.hubspot.net/hub/309733/file-299834622-png/hero/OPS-Home-Hero.png);
+	#heroImage {
+		background: url(http://cdn2.hubspot.net/hub/309733/file-299834622-png/hero/OPS-Home-Hero.png) 50% 0 no-repeat fixed;
 		background-size: cover;
-		height: 25em;
+		height: 30em;
 	}
     
     .heroText {
-        padding-left: 2em;
-        padding-right: 2em;
         
         h1 {
             letter-spacing: 0.02em;
@@ -256,6 +273,22 @@ body {
             color: $white;
         }
     }
+}
+
+.heroCTA {
+    background: $mdGrey;
+    width: 100%;
+    padding: 0.5em 0;
+    
+    p, h1, h2, h3, h4, a {
+        color: $white;
+    }
+    
+    .ctaDescription {
+        display: inline-block;
+        vertical-align: middle;
+    }
+    
 }
 
 .testimonialSlider {
