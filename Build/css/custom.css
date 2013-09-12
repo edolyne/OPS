@@ -155,14 +155,24 @@ p {
 
 /* BLOCK ELEMENT OVERIDE */
 body {
-  margin: 0 auto; }
+  margin: 0 auto;
+  overflow-x: hidden; }
 
 .body-container-wrapper {
-  margin: 0 2em; }
+  max-width: 71.25em;
+  margin: 0 auto; }
 
 .fullWidth {
   margin-left: -2em;
   margin-right: -2em; }
+
+.row-fluid .row-fluid-wrapper .row-fluid .row-fluid-wrapper {
+  max-width: 71.25em;
+  margin: 0 auto; }
+
+.bodyWrapper .row-fluid-wrapper .row-fluid {
+  max-width: 71.25em;
+  margin: 0 auto; }
 
 /* TOP SEARCH NAV */
 .topNav {
