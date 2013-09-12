@@ -220,7 +220,12 @@ body {
       border-bottom: #f99a20 1px solid; }
 
 .header .menu {
-  margin: 2em; }
+  padding: 1em 2em; }
+  .header .menu .logo {
+    vertical-align: middle;
+    display: inline-block; }
+  .header .menu .headerMenu {
+    text-align: right; }
 
 /* HOME PAGE */
 .hero {

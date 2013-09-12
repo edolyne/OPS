@@ -168,7 +168,16 @@ body {
 }
 
 .header .menu {
-    margin: 2em;
+    padding: 1em 2em;
+    
+    .logo {
+        vertical-align: middle;
+        display: inline-block;
+    }
+    
+    .headerMenu {
+        text-align: right;   
+    }
 }
 
 /* HOME PAGE */
