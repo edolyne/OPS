@@ -42,7 +42,7 @@ h3 {
 
 h4 {
 	font-size: 1.25em; /* 20 / 16 */
-	line-height: 1.142857142857143em; /* 24 / 21 */
+	line-height: 1.4em; /* 24 / 21 */
 	margin-bottom: 1.142857142857143em; /* 24 / 21 */
 	color: $black;
 	font-family: Oswald, sans-serif;
@@ -78,6 +78,28 @@ p {
 	text-align: center;
 }
 
+.border-top {
+    border-top: $black 1px solid;
+}
+
+/* BLOCKED BACKGROUNDS */
+
+.greyPill {
+    background: $silver;
+    margin: 4em 0;
+    padding: 0.5em 2em;
+    border: $ltGrey 1px solid;
+    
+    .approval-badge {
+        text-align: center;
+        margin-top: .5em;
+    }
+    
+    h4 {
+        text-align: center;
+    }
+}
+
 /* BLOCK ELEMENT OVERIDE */
 
 body {
@@ -111,8 +133,8 @@ body {
 
 .topNav {
 	width: 100%;
-	background: $mdGrey;
-	color: $white;
+	background: $silver;
+	color: $mdGrey;
 	padding: 1em 2em;
 }
 
@@ -166,20 +188,40 @@ body {
     h5 {
         margin: 0;
         text-align: right;
+        display: block;
+        cursor: pointer;
         
-        a {
-            text-decoration: none;
-            color: $white;
-        }
     }
 }
 
 .locatePane {
-    display: none;   
+    height: 0px;
+    overflow: hidden;
+    -webkit-transform: translateZ(0);
+    -webkit-transition: all 0.75s ease;
+    -moz-transition: all 0.75s ease;
+    -o-transition: all 0.75s ease;
+    -ms-transition:all 0.75s ease;
+    transition: all 0.75s ease;
+
+    p {
+        color: $mdGrey;
+    }
+    
+    .btn-outline {
+        border: $mdGrey 2px solid;
+        color: $mdGrey;
+    }
+    
+    .btn-outline:hover {
+        background: $mdGrey;
+        color: $silver;
+    }
 }
 
 .locatePane.open {
-    display: block;
+    margin: 2em 0;
+    height: auto;
 }
 
 /* STICKY HEADER */
@@ -205,9 +247,11 @@ body {
     background: $white;
     opacity: 0.9;
     border-bottom: $ltGrey 1px solid;
+    z-index: 9999;
     
     .headerMenu .cell-wrapper ul {
         margin-top: 0;
+        
     }
     
     #hs_cos_wrapper_logo {
@@ -262,6 +306,21 @@ body {
         
         ul {
             margin-top: 1em;
+            
+            li {
+                
+                a {
+                    padding: 0px;
+                    margin: 10px 20px;
+                }
+            }
+            
+            li:last-child {
+                
+                a {
+                    margin-right: 0px;
+                }
+            }
         }
     }
 }
@@ -291,12 +350,19 @@ body {
 }
 
 .heroCTA {
-    background: $mdGrey;
+    background: $silver;
     width: 100%;
     padding: 0.5em 0;
     
     p, h1, h2, h3, h4, a {
-        color: $white;
+        color: $mdGrey;
+    }
+    
+    .btn-orange {
+        
+        a {
+            color: $white;
+        }
     }
     
     .ctaDescription {

@@ -13,6 +13,7 @@
 	text-decoration: none;
     @include box-shadow(0 3px 0 0 $drkOrange);
     border-radius: 4px;
+    margin: 1em 0;
     
     a {
         text-decoration: none;
@@ -23,9 +24,9 @@
 
 .btn-orange:hover {
     opacity: 1;
-    transform: scale(0.97);
-    -ms-transform: scale(0.97);
-    -webkit-transform: scale(0.97);
+    transform: scale(0.99);
+    -ms-transform: scale(0.99);
+    -webkit-transform: scale(0.99);
     
 }
 
@@ -42,6 +43,7 @@
 	text-align: center;
 	text-decoration: none;
     border-radius: 4px;
+    margin: 1em 0;
     
     a {
         text-decoration: none;
@@ -52,9 +54,9 @@
 .btn-outline:hover {
     background: $white;
     border: $white 2px solid;
-    transform: scale(0.97);
-    -ms-transform: scale(0.97);
-    -webkit-transform: scale(0.97);
+    transform: scale(0.99);
+    -ms-transform: scale(0.99);
+    -webkit-transform: scale(0.99);
     color: $mdGrey;
     
 }
