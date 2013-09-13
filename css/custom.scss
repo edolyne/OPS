@@ -74,6 +74,12 @@ p {
 	font-weight: light;
 }
 
+a {
+    color: $mdGrey;
+    font-family: OpenSans, sans-serif;
+	font-weight: light;
+}
+
 .center {
 	text-align: center;
 }
@@ -97,6 +103,7 @@ p {
     
     h4 {
         text-align: center;
+        font-size: 1.4em;
     }
 }
 
@@ -222,6 +229,12 @@ body {
 .locatePane.open {
     margin: 2em 0;
     height: auto;
+    -webkit-transform: translateZ(0);
+    -webkit-transition: all 0.75s ease;
+    -moz-transition: all 0.75s ease;
+    -o-transition: all 0.75s ease;
+    -ms-transition:all 0.75s ease;
+    transition: all 0.75s ease;
 }
 
 /* STICKY HEADER */
@@ -283,7 +296,7 @@ body {
 			font-weight: light;
 			
 			a {
-				color: $black;
+				color: $mdGrey;
 				}
 			a:hover {
 				color: $orange;
@@ -339,12 +352,12 @@ body {
         
         h1 {
             letter-spacing: 0.02em;
-            text-shadow: 2px 3px 0px $whiteHalf;
+            text-shadow: 2px 3px 0px $mdGrey;
         }
         
         p {
             color: $white;
-            text-shadow: 1px 2px 0px $whiteHalf;
+            text-shadow: 1px 2px 0px $mdGrey;
         }
     }
 }

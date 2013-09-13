@@ -185,6 +185,11 @@ p {
   font-family: OpenSans, sans-serif;
   font-weight: light; }
 
+a {
+  color: #333333;
+  font-family: OpenSans, sans-serif;
+  font-weight: light; }
+
 .center {
   text-align: center; }
 
@@ -201,7 +206,8 @@ p {
     text-align: center;
     margin-top: .5em; }
   .greyPill h4 {
-    text-align: center; }
+    text-align: center;
+    font-size: 1.4em; }
 
 /* BLOCK ELEMENT OVERIDE */
 body {
@@ -295,7 +301,13 @@ body {
 
 .locatePane.open {
   margin: 2em 0;
-  height: auto; }
+  height: auto;
+  -webkit-transform: translateZ(0);
+  -webkit-transition: all 0.75s ease;
+  -moz-transition: all 0.75s ease;
+  -o-transition: all 0.75s ease;
+  -ms-transition: all 0.75s ease;
+  transition: all 0.75s ease; }
 
 /* STICKY HEADER */
 /*.header-container-wrapper {
@@ -334,7 +346,7 @@ body {
     font-family: Oswald, sans-serif;
     font-weight: light; }
     #hs_cos_wrapper_top_menu ul li a {
-      color: black; }
+      color: #333333; }
     #hs_cos_wrapper_top_menu ul li a:hover {
       color: #f99a20;
       border-bottom: #f99a20 1px solid; }
@@ -361,10 +373,10 @@ body {
   height: 30em; }
 .hero .heroText h1 {
   letter-spacing: 0.02em;
-  text-shadow: 2px 3px 0px rgba(255, 255, 255, 0.3); }
+  text-shadow: 2px 3px 0px #333333; }
 .hero .heroText p {
   color: white;
-  text-shadow: 1px 2px 0px rgba(255, 255, 255, 0.3); }
+  text-shadow: 1px 2px 0px #333333; }
 
 .heroCTA {
   background: #ebebeb;
