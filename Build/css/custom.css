@@ -44,25 +44,30 @@
   src: url("http://cdn2.hubspot.net/hub/309733/file-300510230-svg/fonts/opensans/opensans-light-webfont.svg.eot?#iefix") format("embedded-opentype"), url("http://cdn2.hubspot.net/hub/309733/file-300510230-svg/fonts/opensans/opensans-light-webfont.svg.woff") format("woff"), url("http://cdn2.hubspot.net/hub/309733/file-300510230-svg/fonts/opensans/opensans-light-webfont.svg.ttf") format("truetype"), url("http://cdn2.hubspot.net/hub/309733/file-300510230-svg/fonts/opensans/opensans-light-webfont.svg.svg#OpenSans") format("svg"); }
 
 /* BUTTONS */
-.btn-orange {
+.btn-solid {
   padding: 1em 2em;
   display: block;
   font-family: Oswald;
   font-weight: light;
   text-transform: uppercase;
   color: white;
-  background: #f99a20;
   font-size: 1em;
   text-align: center;
   text-decoration: none;
   box-shadow: 0 3px 0 0 #d78116;
   border-radius: 4px;
   margin: 1em 0; }
-  .btn-orange a {
+  .btn-solid a {
     text-decoration: none;
     display: block; }
 
-.btn-orange:hover {
+.btn-solid.orange {
+  background: #f99a20;
+  color: white; }
+  .btn-solid.orange a {
+    color: white; }
+
+.btn-solid:hover {
   opacity: 1;
   transform: scale(0.99);
   -ms-transform: scale(0.99);
@@ -74,9 +79,7 @@
   font-family: Oswald;
   font-weight: light;
   text-transform: uppercase;
-  color: white;
   background: transparent;
-  border: white 2px solid;
   font-size: 1em;
   text-align: center;
   text-decoration: none;
@@ -85,6 +88,18 @@
   .btn-outline a {
     text-decoration: none;
     display: block; }
+
+.btn-outline.white {
+  border: white 2px solid;
+  color: white; }
+
+.btn-outline.orange {
+  border: #f99a20 2px solid;
+  color: #f99a20; }
+
+.btn-outline.orange:hover {
+  background: #f99a20;
+  color: white; }
 
 .btn-outline:hover {
   background: white;
@@ -100,6 +115,26 @@
 /* BUTTON POSITIONING */
 .verticalBtn {
   margin-top: 1.65em; }
+
+.quarter {
+  width: 25%;
+  margin: 0 auto; }
+
+.half {
+  width: 50%;
+  margin: 0 auto; }
+
+.three-quarters {
+  width: 75%;
+  margin: 0 auto; }
+
+.full {
+  width: 100%;
+  margin: 0 auto; }
+
+/* Clear */
+.clear {
+  clear: both; }
 
 body {
   font-size: 100%;
@@ -199,7 +234,7 @@ a {
 /* BLOCKED BACKGROUNDS */
 .greyPill {
   background: #ebebeb;
-  margin: 4em 0;
+  margin: 8em 0;
   padding: 0.5em 2em;
   border: #969696 1px solid; }
   .greyPill .approval-badge {
@@ -228,7 +263,7 @@ body {
 .bodyWrapper {
   margin: 3em auto; }
 
-.bodyWrapper .row-fluid-wrapper .row-fluid {
+.bodyWrapper {
   max-width: 71.25em;
   margin: 0 auto; }
 
@@ -382,7 +417,7 @@ body {
   background: #ebebeb;
   width: 100%;
   padding: 0.5em 0; }
-  .heroCTA p, .heroCTA h1, .heroCTA h2, .heroCTA h3, .heroCTA h4, .heroCTA a {
+  .heroCTA p, .heroCTA h1, .heroCTA h2, .heroCTA h3, .heroCTA h4 {
     color: #333333; }
   .heroCTA .btn-orange a {
     color: white; }
@@ -390,11 +425,41 @@ body {
     display: inline-block;
     vertical-align: middle; }
 
+.locateProducts h4 {
+  margin: 0;
+  line-height: 48px; }
+.locateProducts .onlineShopping {
+  width: 80%;
+  text-align: center;
+  margin: 2em 0; }
+
 .testimonialSlider {
-  background: #333333;
-  padding: 2em 1em; }
+  background: #333333; }
+  .testimonialSlider .bodyWrapper {
+    margin: 3em auto; }
+  .testimonialSlider .testimonial-slider {
+    background: transparent;
+    width: 75%;
+    margin: 1em auto; }
+    .testimonialSlider .testimonial-slider .hs_cos_flex-slider {
+      background: transparent; }
+    .testimonialSlider .testimonial-slider img {
+      max-width: 25%;
+      display: inline-block !important;
+      vertical-align: top; }
+    .testimonialSlider .testimonial-slider .caption {
+      background: transparent;
+      font-size: 1em;
+      width: 60%;
+      display: inline-block;
+      vertical-align: top;
+      text-align: left; }
   .testimonialSlider h2 {
     text-align: center;
     margin-top: 0em; }
   .testimonialSlider p {
     color: white; }
+
+.whatsNew {
+  margin-top: 5em;
+  background: #ebebeb; }

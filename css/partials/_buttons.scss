@@ -1,13 +1,12 @@
 /* BUTTONS */
 
-.btn-orange {
+.btn-solid {
 	padding: 1em 2em;
 	display: block;
 	font-family: Oswald;
 	font-weight: light;
 	text-transform: uppercase;
 	color: $white;
-	background: $orange;
 	font-size: 1em;
 	text-align: center;
 	text-decoration: none;
@@ -22,7 +21,16 @@
 
 }
 
-.btn-orange:hover {
+.btn-solid.orange {
+    background: $orange;
+    color: $white;
+    
+    a {
+        color: $white;
+    }
+}   
+
+.btn-solid:hover {
     opacity: 1;
     transform: scale(0.99);
     -ms-transform: scale(0.99);
@@ -36,9 +44,7 @@
 	font-family: Oswald;
 	font-weight: light;
 	text-transform: uppercase;
-	color: $white;
 	background: transparent;
-	border: $white 2px solid;
 	font-size: 1em;
 	text-align: center;
 	text-decoration: none;
@@ -49,6 +55,21 @@
         text-decoration: none;
         display: block;
     }
+}
+
+.btn-outline.white {
+    border: $white 2px solid;
+    color: $white;
+}
+
+.btn-outline.orange {
+    border: $orange 2px solid;
+    color: $orange;
+}
+
+.btn-outline.orange:hover {
+    background: $orange;
+    color: $white;
 }
 
 .btn-outline:hover {

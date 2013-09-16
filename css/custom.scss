@@ -3,6 +3,14 @@
 @import "colors";
 @import "fonts";
 @import "buttons";
+@import "sizes";
+
+
+/* Clear */
+
+.clear {
+    clear: both;
+}
 
 body {
 	font-size: 100%; /* Base font-size of 16px */
@@ -92,7 +100,7 @@ a {
 
 .greyPill {
     background: $silver;
-    margin: 4em 0;
+    margin: 8em 0;
     padding: 0.5em 2em;
     border: $ltGrey 1px solid;
     
@@ -131,7 +139,7 @@ body {
 .bodyWrapper {
     margin: 3em auto;   
 }
-.bodyWrapper .row-fluid-wrapper .row-fluid {
+.bodyWrapper {
     max-width: 71.25em;
     margin: 0 auto;
 }
@@ -367,7 +375,7 @@ body {
     width: 100%;
     padding: 0.5em 0;
     
-    p, h1, h2, h3, h4, a {
+    p, h1, h2, h3, h4 {
         color: $mdGrey;
     }
     
@@ -385,9 +393,51 @@ body {
     
 }
 
+.locateProducts {
+    
+    h4 {
+        margin: 0;
+        line-height: 48px;
+    }
+    
+    .onlineShopping {
+        width: 80%;
+        text-align: center;
+        margin: 2em 0;
+    }
+}
+
 .testimonialSlider {
 	background: $mdGrey;
-	padding: 2em 1em;
+        
+        .bodyWrapper {
+            margin: 3em auto;
+        }
+    
+    .testimonial-slider {
+        background: transparent;
+        width: 75%;
+        margin: 1em auto;
+        
+        .hs_cos_flex-slider {
+            background: transparent;
+        }
+        
+        img {
+            max-width: 25%;
+            display: inline-block !important;
+            vertical-align: top;
+        }
+        
+        .caption {
+            background: transparent;
+            font-size: 1em;
+            width: 60%;
+            display: inline-block;
+            vertical-align: top;
+            text-align: left;
+        }
+    }
 	
 	h2 {
 		text-align: center;
@@ -397,4 +447,9 @@ body {
 	p {
 		color: $white;
 	}
+}
+
+.whatsNew {
+    margin-top: 5em;
+    background: $silver;
 }
