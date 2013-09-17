@@ -1,7 +1,6 @@
 /* PARTIAL IMPORTS */
 
 @import "colors";
-@import "fonts";
 @import "buttons";
 @import "sizes";
 
@@ -11,6 +10,17 @@
 .clear {
     clear: both;
 }
+
+/* Full Width */
+
+.fullWidth .row-fluid-wrapper {
+    margin: 0 auto;
+    max-width: 71.25em;
+}
+
+/* Fonts */
+
+@import "fonts";
 
 body {
 	font-size: 100%; /* Base font-size of 16px */
@@ -73,17 +83,21 @@ h6 {
 	font-weight: light;
 }
 
-p {
+p, label {
 	font-size: 1em; /* 16 / 16 */
 	line-height: 1.5em; /* 24 / 16 */
 	margin-bottom: 1.5em; /* 24 / 16 */
-	color: $black;
+	color: $grey;
 	font-family: OpenSans, sans-serif;
 	font-weight: light;
 }
 
+.hs-form-required {
+    color: $orange;
+}
+
 a {
-    color: $mdGrey;
+    color: $grey;
     font-family: OpenSans, sans-serif;
 	font-weight: light;
 }
@@ -93,7 +107,7 @@ a {
 }
 
 .border-top {
-    border-top: $black 1px solid;
+    border-top: $grey 1px solid;
 }
 
 /* BLOCKED BACKGROUNDS */
@@ -115,6 +129,10 @@ a {
     }
 }
 
+/* Forms */
+
+
+
 /* BLOCK ELEMENT OVERIDE */
 
 body {
@@ -123,7 +141,7 @@ body {
 }
 
 .body-container-wrapper {
-    margin: 0 auto;
+    margin: 3em auto 0 auto;
 }
 
 .fullWidth {
@@ -449,7 +467,84 @@ body {
 	}
 }
 
+.locateProducts {
+    padding: 3em 0;
+}
+
+.learnMore {
+    margin: 3em 0;
+}
+
 .whatsNew {
-    margin-top: 5em;
+    padding: 2em 0;
+    margin-top: 3em;
     background: $silver;
+    
+    h3 {
+        margin-top: 0;
+    }
+    
+    h2 {
+        margin-bottom: 2em;
+    }
+    
+    ul {
+        list-style: none;
+        padding-left: 0;
+        margin: 2em 0;
+        
+        li {
+            
+            a {
+                text-decoration: none;
+            }
+            
+            a:hover {
+                color: $orange;
+            }
+        }
+    }
+    
+    input {
+        border: $ltGrey 1px solid;
+        padding: 0px 1em 0.5em;
+        line-height: 3em;
+        outline: none;
+        border-radius: 3px;
+        transition: all 0.2s ease-out;
+    }
+    
+    input:focus {
+        border: $orange 1px solid;
+    }
+    
+    label {
+        
+    }
+    
+    li.hs-form-radio {
+        display: inline-block;
+        margin: 0 0.5em;
+    }
+}
+
+.featuredArticle {
+    
+    img {
+        height: auto !important;
+    }
+    
+    h3 {
+        margin-top: 0;
+    }
+    
+    a {
+        text-decoration: none;
+        font-weight: bold;
+    }
+    
+    a:hover {
+        color: $orange;
+    }
+
 }

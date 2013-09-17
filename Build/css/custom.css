@@ -1,48 +1,5 @@
 /* PARTIAL IMPORTS */
 /* OPS COLOR SCHEME */
-/* CUSTOM FONT INTEGRATION */
-@font-face {
-  font-family: Oswald;
-  font-weight: normal;
-  font-style: normal;
-  src: url("http://cdn2.hubspot.net/hub/309733/file-299535702-svg/fonts/oswald/oswald-regular-webfont.svg.eot");
-  src: url("http://cdn2.hubspot.net/hub/309733/file-299535702-svg/fonts/oswald/oswald-regular-webfont.svg.eot?#iefix") format("embedded-opentype"), url("http://cdn2.hubspot.net/hub/309733/file-299535702-svg/fonts/oswald/oswald-regular-webfont.svg.woff") format("woff"), url("http://cdn2.hubspot.net/hub/309733/file-299535702-svg/fonts/oswald/oswald-regular-webfont.svg.ttf") format("truetype"), url("http://cdn2.hubspot.net/hub/309733/file-299535702-svg/fonts/oswald/oswald-regular-webfont.svg.svg#Oswald") format("svg"); }
-
-@font-face {
-  font-family: Oswald;
-  font-weight: bold;
-  font-style: normal;
-  src: url("http://cdn2.hubspot.net/hub/309733/file-299511682-svg/fonts/oswald/oswald-bold-webfont.svg.eot");
-  src: url("http://cdn2.hubspot.net/hub/309733/file-299511682-svg/fonts/oswald/oswald-bold-webfont.svg.eot?#iefix") format("embedded-opentype"), url("http://cdn2.hubspot.net/hub/309733/file-299511682-svg/fonts/oswald/oswald-bold-webfont.svg.woff") format("woff"), url("http://cdn2.hubspot.net/hub/309733/file-299511682-svg/fonts/oswald/oswald-bold-webfont.svg.ttf") format("truetype"), url("http://cdn2.hubspot.net/hub/309733/file-299511682-svg/fonts/oswald/oswald-bold-webfont.svg.svg#Oswald") format("svg"); }
-
-@font-face {
-  font-family: Oswald;
-  font-weight: light;
-  font-style: normal;
-  src: url("http://cdn2.hubspot.net/hub/309733/file-298054218-svg/fonts/oswald/oswald-light-webfont.svg.eot");
-  src: url("http://cdn2.hubspot.net/hub/309733/file-298054218-svg/fonts/oswald/oswald-light-webfont.svg.eot?#iefix") format("embedded-opentype"), url("http://cdn2.hubspot.net/hub/309733/file-298054218-svg/fonts/oswald/oswald-light-webfont.svg.woff") format("woff"), url("http://cdn2.hubspot.net/hub/309733/file-298054218-svg/fonts/oswald/oswald-light-webfont.svg.ttf") format("truetype"), url("http://cdn2.hubspot.net/hub/309733/file-298054218-svg/fonts/oswald/oswald-light-webfont.svg.svg#Oswald") format("svg"); }
-
-@font-face {
-  font-family: OpenSans;
-  font-weight: normal;
-  font-style: normal;
-  src: url("http://cdn2.hubspot.net/hub/309733/file-299540817-svg/fonts/opensans/opensans-regular-webfont.svg.eot");
-  src: url("http://cdn2.hubspot.net/hub/309733/file-299540817-svg/fonts/opensans/opensans-regular-webfont.svg.eot?#iefix") format("embedded-opentype"), url("http://cdn2.hubspot.net/hub/309733/file-299540817-svg/fonts/opensans/opensans-regular-webfont.svg.woff") format("woff"), url("http://cdn2.hubspot.net/hub/309733/file-299540817-svg/fonts/opensans/opensans-regular-webfont.svg.ttf") format("truetype"), url("http://cdn2.hubspot.net/hub/309733/file-299540817-svg/fonts/opensans/opensans-regular-webfont.svg.svg#OpenSans") format("svg"); }
-
-@font-face {
-  font-family: OpenSans;
-  font-weight: bold;
-  font-style: normal;
-  src: url("http://cdn2.hubspot.net/hub/309733/file-298066898-svg/fonts/opensans/opensans-bold-webfont.svg.eot");
-  src: url("http://cdn2.hubspot.net/hub/309733/file-298066898-svg/fonts/opensans/opensans-bold-webfont.svg.eot?#iefix") format("embedded-opentype"), url("http://cdn2.hubspot.net/hub/309733/file-298066898-svg/fonts/opensans/opensans-bold-webfont.svg.woff") format("woff"), url("http://cdn2.hubspot.net/hub/309733/file-298066898-svg/fonts/opensans/opensans-bold-webfont.svg.ttf") format("truetype"), url("http://cdn2.hubspot.net/hub/309733/file-298066898-svg/fonts/opensans/opensans-bold-webfont.svg.svg#OpenSans") format("svg"); }
-
-@font-face {
-  font-family: OpenSans;
-  font-weight: light;
-  font-style: normal;
-  src: url("http://cdn2.hubspot.net/hub/309733/file-300510230-svg/fonts/opensans/opensans-light-webfont.svg.eot");
-  src: url("http://cdn2.hubspot.net/hub/309733/file-300510230-svg/fonts/opensans/opensans-light-webfont.svg.eot?#iefix") format("embedded-opentype"), url("http://cdn2.hubspot.net/hub/309733/file-300510230-svg/fonts/opensans/opensans-light-webfont.svg.woff") format("woff"), url("http://cdn2.hubspot.net/hub/309733/file-300510230-svg/fonts/opensans/opensans-light-webfont.svg.ttf") format("truetype"), url("http://cdn2.hubspot.net/hub/309733/file-300510230-svg/fonts/opensans/opensans-light-webfont.svg.svg#OpenSans") format("svg"); }
-
 /* BUTTONS */
 .btn-solid {
   padding: 1em 2em;
@@ -136,6 +93,55 @@
 .clear {
   clear: both; }
 
+/* Full Width */
+.fullWidth .row-fluid-wrapper {
+  margin: 0 auto;
+  max-width: 71.25em; }
+
+/* Fonts */
+/* CUSTOM FONT INTEGRATION */
+@font-face {
+  font-family: Oswald;
+  font-weight: normal;
+  font-style: normal;
+  src: url("http://cdn2.hubspot.net/hub/309733/file-299535702-svg/fonts/oswald/oswald-regular-webfont.svg.eot");
+  src: url("http://cdn2.hubspot.net/hub/309733/file-299535702-svg/fonts/oswald/oswald-regular-webfont.svg.eot?#iefix") format("embedded-opentype"), url("http://cdn2.hubspot.net/hub/309733/file-299535702-svg/fonts/oswald/oswald-regular-webfont.svg.woff") format("woff"), url("http://cdn2.hubspot.net/hub/309733/file-299535702-svg/fonts/oswald/oswald-regular-webfont.svg.ttf") format("truetype"), url("http://cdn2.hubspot.net/hub/309733/file-299535702-svg/fonts/oswald/oswald-regular-webfont.svg.svg#Oswald") format("svg"); }
+
+@font-face {
+  font-family: Oswald;
+  font-weight: bold;
+  font-style: normal;
+  src: url("http://cdn2.hubspot.net/hub/309733/file-299511682-svg/fonts/oswald/oswald-bold-webfont.svg.eot");
+  src: url("http://cdn2.hubspot.net/hub/309733/file-299511682-svg/fonts/oswald/oswald-bold-webfont.svg.eot?#iefix") format("embedded-opentype"), url("http://cdn2.hubspot.net/hub/309733/file-299511682-svg/fonts/oswald/oswald-bold-webfont.svg.woff") format("woff"), url("http://cdn2.hubspot.net/hub/309733/file-299511682-svg/fonts/oswald/oswald-bold-webfont.svg.ttf") format("truetype"), url("http://cdn2.hubspot.net/hub/309733/file-299511682-svg/fonts/oswald/oswald-bold-webfont.svg.svg#Oswald") format("svg"); }
+
+@font-face {
+  font-family: Oswald;
+  font-weight: light;
+  font-style: normal;
+  src: url("http://cdn2.hubspot.net/hub/309733/file-298054218-svg/fonts/oswald/oswald-light-webfont.svg.eot");
+  src: url("http://cdn2.hubspot.net/hub/309733/file-298054218-svg/fonts/oswald/oswald-light-webfont.svg.eot?#iefix") format("embedded-opentype"), url("http://cdn2.hubspot.net/hub/309733/file-298054218-svg/fonts/oswald/oswald-light-webfont.svg.woff") format("woff"), url("http://cdn2.hubspot.net/hub/309733/file-298054218-svg/fonts/oswald/oswald-light-webfont.svg.ttf") format("truetype"), url("http://cdn2.hubspot.net/hub/309733/file-298054218-svg/fonts/oswald/oswald-light-webfont.svg.svg#Oswald") format("svg"); }
+
+@font-face {
+  font-family: OpenSans;
+  font-weight: normal;
+  font-style: normal;
+  src: url("http://cdn2.hubspot.net/hub/309733/file-299540817-svg/fonts/opensans/opensans-regular-webfont.svg.eot");
+  src: url("http://cdn2.hubspot.net/hub/309733/file-299540817-svg/fonts/opensans/opensans-regular-webfont.svg.eot?#iefix") format("embedded-opentype"), url("http://cdn2.hubspot.net/hub/309733/file-299540817-svg/fonts/opensans/opensans-regular-webfont.svg.woff") format("woff"), url("http://cdn2.hubspot.net/hub/309733/file-299540817-svg/fonts/opensans/opensans-regular-webfont.svg.ttf") format("truetype"), url("http://cdn2.hubspot.net/hub/309733/file-299540817-svg/fonts/opensans/opensans-regular-webfont.svg.svg#OpenSans") format("svg"); }
+
+@font-face {
+  font-family: OpenSans;
+  font-weight: bold;
+  font-style: normal;
+  src: url("http://cdn2.hubspot.net/hub/309733/file-298066898-svg/fonts/opensans/opensans-bold-webfont.svg.eot");
+  src: url("http://cdn2.hubspot.net/hub/309733/file-298066898-svg/fonts/opensans/opensans-bold-webfont.svg.eot?#iefix") format("embedded-opentype"), url("http://cdn2.hubspot.net/hub/309733/file-298066898-svg/fonts/opensans/opensans-bold-webfont.svg.woff") format("woff"), url("http://cdn2.hubspot.net/hub/309733/file-298066898-svg/fonts/opensans/opensans-bold-webfont.svg.ttf") format("truetype"), url("http://cdn2.hubspot.net/hub/309733/file-298066898-svg/fonts/opensans/opensans-bold-webfont.svg.svg#OpenSans") format("svg"); }
+
+@font-face {
+  font-family: OpenSans;
+  font-weight: light;
+  font-style: normal;
+  src: url("http://cdn2.hubspot.net/hub/309733/file-300510230-svg/fonts/opensans/opensans-light-webfont.svg.eot");
+  src: url("http://cdn2.hubspot.net/hub/309733/file-300510230-svg/fonts/opensans/opensans-light-webfont.svg.eot?#iefix") format("embedded-opentype"), url("http://cdn2.hubspot.net/hub/309733/file-300510230-svg/fonts/opensans/opensans-light-webfont.svg.woff") format("woff"), url("http://cdn2.hubspot.net/hub/309733/file-300510230-svg/fonts/opensans/opensans-light-webfont.svg.ttf") format("truetype"), url("http://cdn2.hubspot.net/hub/309733/file-300510230-svg/fonts/opensans/opensans-light-webfont.svg.svg#OpenSans") format("svg"); }
+
 body {
   font-size: 100%;
   /* Base font-size of 16px */
@@ -209,19 +215,22 @@ h6 {
   font-family: OpenSans, sans-serif;
   font-weight: light; }
 
-p {
+p, label {
   font-size: 1em;
   /* 16 / 16 */
   line-height: 1.5em;
   /* 24 / 16 */
   margin-bottom: 1.5em;
   /* 24 / 16 */
-  color: black;
+  color: #303030;
   font-family: OpenSans, sans-serif;
   font-weight: light; }
 
+.hs-form-required {
+  color: #f99a20; }
+
 a {
-  color: #333333;
+  color: #303030;
   font-family: OpenSans, sans-serif;
   font-weight: light; }
 
@@ -229,7 +238,7 @@ a {
   text-align: center; }
 
 .border-top {
-  border-top: black 1px solid; }
+  border-top: #303030 1px solid; }
 
 /* BLOCKED BACKGROUNDS */
 .greyPill {
@@ -244,13 +253,14 @@ a {
     text-align: center;
     font-size: 1.4em; }
 
+/* Forms */
 /* BLOCK ELEMENT OVERIDE */
 body {
   margin: 0 auto;
   overflow-x: hidden; }
 
 .body-container-wrapper {
-  margin: 0 auto; }
+  margin: 3em auto 0 auto; }
 
 .fullWidth {
   margin-left: -2em;
@@ -460,6 +470,47 @@ body {
   .testimonialSlider p {
     color: white; }
 
+.locateProducts {
+  padding: 3em 0; }
+
+.learnMore {
+  margin: 3em 0; }
+
 .whatsNew {
-  margin-top: 5em;
+  padding: 2em 0;
+  margin-top: 3em;
   background: #ebebeb; }
+  .whatsNew h3 {
+    margin-top: 0; }
+  .whatsNew h2 {
+    margin-bottom: 2em; }
+  .whatsNew ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 2em 0; }
+    .whatsNew ul li a {
+      text-decoration: none; }
+    .whatsNew ul li a:hover {
+      color: #f99a20; }
+  .whatsNew input {
+    border: #969696 1px solid;
+    padding: 0px 1em 0.5em;
+    line-height: 3em;
+    outline: none;
+    border-radius: 3px;
+    transition: all 0.2s ease-out; }
+  .whatsNew input:focus {
+    border: #f99a20 1px solid; }
+  .whatsNew li.hs-form-radio {
+    display: inline-block;
+    margin: 0 0.5em; }
+
+.featuredArticle img {
+  height: auto !important; }
+.featuredArticle h3 {
+  margin-top: 0; }
+.featuredArticle a {
+  text-decoration: none;
+  font-weight: bold; }
+.featuredArticle a:hover {
+  color: #f99a20; }
