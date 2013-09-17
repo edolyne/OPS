@@ -91,3 +91,29 @@
 .verticalBtn {
     margin-top: 1.65em;
 }
+
+/* Button Mixins */
+
+@mixin btn-solid-orange {
+    padding: 1em 2em;
+	display: block;
+	font-family: Oswald;
+	font-weight: light;
+	text-transform: uppercase;
+	color: $white;
+	font-size: 1em;
+	text-align: center;
+	text-decoration: none;
+    @include box-shadow(0 3px 0 0 $drkOrange);
+    border-radius: 4px;
+    margin: 1em 0;
+    background: $orange;
+    color: $white;
+}
+
+@mixin btn-solid-orange-hover {
+    opacity: 1;
+    transform: scale(0.99);
+    -ms-transform: scale(0.99);
+    -webkit-transform: scale(0.99);
+}
