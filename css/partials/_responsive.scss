@@ -9,6 +9,10 @@
  
 /* Portrait tablet to landscape and desktop */
 @media (min-width: 768px) and (max-width: 979px) { 
+    
+    body {   
+        font-size: 95%;
+    }
 
     .menu {
         display: none !important;
@@ -18,15 +22,24 @@
         display: block;
         
         .mobile-logo {
-            display: inline-block !important;
-            width: 45%;
             vertical-align: middle;
         }
         
         .mobile-nav {
-            display: inline-block !important;
-            width: 66.56% !important;
             vertical-align: middle;
+            
+            #mobile-menu {
+                
+                a {
+                    line-height: 5em;
+                }
+            }
+        }
+    }
+    
+    .testimonialSlider {
+        .caption {
+            padding-right: 0;
         }
     }
 }
@@ -37,24 +50,101 @@
     .menu {
         display: none !important;
     }
+    
+    .locateDropdown, .widget-type-google_search {
+        width: 49.5% !important;
+        display: inline-block !important;
+    }
 
     .mobile-header {
         display: block;
         
         .mobile-logo {
-            display: inline-block !important;
-            width: 45%;
             vertical-align: middle;
+            width: 49.5% !important;
+            display: inline-block !important;
         }
         
         .mobile-nav {
-            display: inline-block !important;
-            width: 54% !important;
             vertical-align: middle;
+            width: 49.5% !important;
+            display: inline-block !important;
+        }
+    }
+    
+    .half {
+        width: 75%;
+    }
+    
+    .quarter {
+        width: 50%;
+    }
+    
+    .imageHeading {
+        
+        text-align: center;
+        margin: 1em 0;
+        
+        .img {
+            display: inline-block !important;
+            margin: 0 4%;
+        }
+        
+        .heading {
+            display: inline-block !important;
+            position: relative;
+            top: -0.5em;
+        }
+    }
+        
+    
+    .footer {
+        text-align: center;
+        
+        .footerMenu {
+            text-align: center;
         }
     }
 
 }
  
 /* Landscape phones and down */
-@media (max-width: 480px) {  }
+@media (max-width: 480px) { 
+
+    body {
+        font-size: 70%;
+    }
+    
+    .hero {
+        
+        h1 {
+            margin-top: 0.5em;
+        }
+    }
+    
+    .locateDropdown {
+        width: 100% !important;
+        display: block !important;
+        margin-top: 1em;
+        
+        .dropdownToggle {
+            text-align: center;
+        }
+    }
+    
+    .widget-type-google_search {
+        display: none !important;
+    }
+    
+    .whatsNew {
+        
+        .footerSubscribe {
+            
+            input {
+                line-height: 2em;
+                padding: 0.5em;
+            }
+        }
+    }
+
+}

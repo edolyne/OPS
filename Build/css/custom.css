@@ -2,7 +2,7 @@
 /* OPS COLOR SCHEME */
 /* BUTTONS */
 .btn-solid {
-  padding: 1em 2em;
+  padding: 1em 1em;
   display: block;
   font-family: Oswald;
   font-weight: light;
@@ -13,7 +13,10 @@
   text-decoration: none;
   box-shadow: 0 3px 0 0 #d78116;
   border-radius: 4px;
-  margin: 1em 0; }
+  margin: 1em 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
   .btn-solid a {
     text-decoration: none;
     display: block; }
@@ -31,7 +34,7 @@
   -webkit-transform: scale(0.99); }
 
 .btn-outline {
-  padding: 1em 2em;
+  padding: 1em 1em;
   display: block;
   font-family: Oswald;
   font-weight: light;
@@ -41,7 +44,10 @@
   text-align: center;
   text-decoration: none;
   border-radius: 4px;
-  margin: 1em 0; }
+  margin: 1em 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
   .btn-outline a {
     text-decoration: none;
     display: block; }
@@ -279,7 +285,8 @@ body {
 
 .bodyWrapper {
   max-width: 71.25em;
-  margin: 0 auto; }
+  margin: 0 auto;
+  padding: 0 2em; }
 
 /* TOP SEARCH NAV */
 .topNav {
@@ -319,17 +326,17 @@ body {
     top: -1.75em;
     position: relative;
     height: 1.54em;
-    right: -8.35em;
+    right: -8.4em;
     cursor: pointer;
     border-top-right-radius: 4px;
     border-bottom-right-radius: 4px; }
 
-#locateDropdown h5 {
+.locateDropdown h5 {
   margin: 0;
   text-align: right;
   display: block;
   cursor: pointer; }
-#locateDropdown .dropdownToggle:hover {
+.locateDropdown .dropdownToggle:hover {
   color: #f99a20; }
 
 .locatePane {
@@ -457,17 +464,19 @@ body {
   background: url(http://cdn2.hubspot.net/hub/309733/file-299834622-png/hero/OPS-Home-Hero.png) 50% 0 no-repeat fixed;
   background-size: cover;
   height: 30em; }
-.hero .heroText h1 {
-  letter-spacing: 0.02em;
-  text-shadow: 2px 3px 0px #333333; }
-.hero .heroText p {
-  color: white;
-  text-shadow: 1px 2px 0px #333333; }
+.hero .heroText {
+  padding: 0 2em; }
+  .hero .heroText h1 {
+    letter-spacing: 0.02em;
+    text-shadow: 2px 3px 0px #333333; }
+  .hero .heroText p {
+    color: white;
+    text-shadow: 1px 2px 0px #333333; }
 
 .heroCTA {
   background: #ebebeb;
   width: 100%;
-  padding: 0.5em 0; }
+  padding: 0.5em 2em; }
   .heroCTA p, .heroCTA h1, .heroCTA h2, .heroCTA h3, .heroCTA h4 {
     color: #333333; }
   .heroCTA .btn-orange a {
@@ -497,6 +506,8 @@ body {
     margin: 1em auto; }
     .testimonialSlider .testimonial-slider .hs_cos_flex-slider {
       background: transparent; }
+      .testimonialSlider .testimonial-slider .hs_cos_flex-slider li {
+        text-align: center; }
     .testimonialSlider .testimonial-slider img {
       max-width: 25%;
       display: inline-block !important;
@@ -518,6 +529,12 @@ body {
   padding: 3em 0; }
   .locateProducts .three-quarters {
     margin-top: 2em; }
+  .locateProducts .usaMap {
+    text-align: center;
+    min-height: 18.65em;
+    display: inline-block; }
+    .locateProducts .usaMap img {
+      margin-top: 3em; }
 
 .learnMore {
   margin: 3em 0 0; }
@@ -563,8 +580,9 @@ body {
     display: inline-block; }
     .whatsNew .footerSubscribe .hs_submit .hs-button {
       line-height: 1em;
+      width: 100%;
       border: #f99a20 0px solid;
-      padding: 1em 2em;
+      padding: 1em 1em;
       display: block;
       font-family: Oswald;
       font-weight: light;
@@ -577,7 +595,10 @@ body {
       border-radius: 4px;
       margin: 1em 0;
       background: #f99a20;
-      color: white; }
+      color: white;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box; }
     .whatsNew .footerSubscribe .hs_submit .hs-button:hover {
       opacity: 1;
       transform: scale(0.99);
@@ -585,11 +606,14 @@ body {
       -webkit-transform: scale(0.99); }
   .whatsNew .footerSubscribe input {
     border: #969696 1px solid;
-    padding: 1em 2em;
+    padding: 1em 1em;
     line-height: 2.5em;
     outline: none;
     border-radius: 3px;
-    transition: all 0.2s ease-out; }
+    transition: all 0.2s ease-out;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
   .whatsNew .footerSubscribe input:focus {
     border: #f99a20 1px solid; }
   .whatsNew .footerSubscribe ul {
@@ -599,7 +623,8 @@ body {
     margin-right: 1em; }
 
 .featuredArticle img {
-  height: auto !important; }
+  height: auto !important;
+  margin-bottom: 2em; }
 .featuredArticle h3 {
   margin-top: 0; }
 .featuredArticle a {
@@ -615,32 +640,82 @@ body {
     display: none !important; } }
 /* Portrait tablet to landscape and desktop */
 @media (min-width: 768px) and (max-width: 979px) {
+  body {
+    font-size: 95%; }
+
   .menu {
     display: none !important; }
 
   .mobile-header {
     display: block; }
     .mobile-header .mobile-logo {
-      display: inline-block !important;
-      width: 45%;
       vertical-align: middle; }
     .mobile-header .mobile-nav {
-      display: inline-block !important;
-      width: 66.56% !important;
-      vertical-align: middle; } }
+      vertical-align: middle; }
+      .mobile-header .mobile-nav #mobile-menu a {
+        line-height: 5em; }
+
+  .testimonialSlider .caption {
+    padding-right: 0; } }
 /* Landscape phone to portrait tablet */
 @media (max-width: 767px) {
   .menu {
     display: none !important; }
 
+  .locateDropdown, .widget-type-google_search {
+    width: 49.5% !important;
+    display: inline-block !important; }
+
   .mobile-header {
     display: block; }
     .mobile-header .mobile-logo {
-      display: inline-block !important;
-      width: 45%;
-      vertical-align: middle; }
+      vertical-align: middle;
+      width: 49.5% !important;
+      display: inline-block !important; }
     .mobile-header .mobile-nav {
+      vertical-align: middle;
+      width: 49.5% !important;
+      display: inline-block !important; }
+
+  .half {
+    width: 75%; }
+
+  .quarter {
+    width: 50%; }
+
+  .imageHeading {
+    text-align: center;
+    margin: 1em 0; }
+    .imageHeading .img {
       display: inline-block !important;
-      width: 54% !important;
-      vertical-align: middle; } }
+      margin: 0 4%; }
+    .imageHeading .heading {
+      display: inline-block !important;
+      position: relative;
+      top: -0.5em; }
+
+  .footer {
+    text-align: center; }
+    .footer .footerMenu {
+      text-align: center; } }
 /* Landscape phones and down */
+@media (max-width: 480px) {
+  body {
+    font-size: 70%; }
+
+  .hero h1 {
+    margin-top: 0.5em; }
+
+  .locateDropdown {
+    width: 100% !important;
+    display: block !important;
+    margin-top: 1em; }
+    .locateDropdown .dropdownToggle {
+      text-align: center; }
+
+  .widget-type-google_search {
+    display: none !important; }
+
+  .whatsNew .footerSubscribe input {
+    line-height: 2em;
+    padding: 0.5em; } }

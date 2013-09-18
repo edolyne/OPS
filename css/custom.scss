@@ -171,6 +171,7 @@ body {
 .bodyWrapper {
     max-width: 71.25em;
     margin: 0 auto;
+    padding: 0 2em;
 }
 
 /* TOP SEARCH NAV */
@@ -221,13 +222,13 @@ body {
         top: -1.75em;
         position: relative;
         height: 1.54em;
-        right: -8.35em;
+        right: -8.4em;
         cursor: pointer;
         @include border-right-radius(4px);
     }
 }
 
-#locateDropdown {
+.locateDropdown {
     
     h5 {
         margin: 0;
@@ -446,6 +447,8 @@ body {
     
     .heroText {
         
+        padding: 0 2em;
+        
         h1 {
             letter-spacing: 0.02em;
             text-shadow: 2px 3px 0px $mdGrey;
@@ -461,7 +464,7 @@ body {
 .heroCTA {
     background: $silver;
     width: 100%;
-    padding: 0.5em 0;
+    padding: 0.5em 2em;
     
     p, h1, h2, h3, h4 {
         color: $mdGrey;
@@ -514,6 +517,10 @@ body {
         
         .hs_cos_flex-slider {
             background: transparent;
+            
+            li {
+                text-align: center;
+            }
         }
         
         img {
@@ -547,6 +554,16 @@ body {
     
     .three-quarters {
         margin-top: 2em;
+    }
+    
+    .usaMap {
+        text-align: center;
+        min-height: 18.65em;
+        display: inline-block;
+        
+        img {
+            margin-top: 3em;
+        }
     }
 }
 
@@ -614,8 +631,10 @@ body {
             
             .hs-button {
                 line-height: 1em;
+                width: 100%;
                 border: $orange 0px solid;
                 @include btn-solid-orange;
+                @include box-sizing(border-box);
             }
             
             .hs-button:hover {
@@ -626,11 +645,12 @@ body {
         
         input {
             border: $ltGrey 1px solid;
-            padding: 1em 2em;
+            padding: 1em 1em;
             line-height: 2.5em;
             outline: none;
             border-radius: 3px;
             transition: all 0.2s ease-out;
+            @include box-sizing(border-box);
         }
         
         input:focus {
@@ -656,6 +676,7 @@ body {
     
     img {
         height: auto !important;
+        margin-bottom: 2em;
     }
     
     h3 {
